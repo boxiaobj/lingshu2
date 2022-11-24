@@ -54,10 +54,10 @@ datasource = '0'*200
 datalen = hex(socket.ntohs(2*metrics))[2:]    # little Endian encoding for 16bits integer
 datablock = '0'*2*2*metrics
 blkstatus = '0000'
-tmstampl32 = 'E8DD686484010000'
-tmstamph16 = '0000'
-tmstampl32fly = 'E8DD686484010000'
-tmstamph16fly = '0000'
+# tmstampl32 = 'E8DD686484010000'
+# tmstamph16 = '0000'
+# tmstampl32fly = 'E8DD686484010000'
+# tmstamph16fly = '0000'
 
 for i in range(max_frames):
     fc_little_endian = hex(socket.ntohl(frame_count))[2:].upper()  # little Endian encoding for 32bits integer
